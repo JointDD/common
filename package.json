@@ -9,7 +9,8 @@
         "build": "tsc --build tsconfig.json",
         "eslint": "eslint .",
         "codegen": "graphql-codegen --config codegen.yml",
-        "prepare": "yarn build"
+        "prepare": "yarn build",
+        "publish": "npm version patch && npm publish"
     },
     "dependencies": {
         "@apollo/client": "^3.3.11",

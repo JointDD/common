@@ -2,7 +2,7 @@ const animationEffect = (laziness = 1) => `${0.12 * laziness}s cubic-bezier(0, 0
 
 const shadowEffect = (elevation = 1) => `0 0 ${0.125 * elevation}em 0`
 
-export default {
+export const theme = {
     font: 'LatoLatin,Helvetica,Arial,sans-serif',
     shade: Object.assign('#6f6f6f', {
         _100: '#ffffff',
