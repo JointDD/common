@@ -1,0 +1,32 @@
+{
+    "name": "@lywe/shared",
+    "version": "0.2.0",
+    "devDependencies": {
+        "@graphql-codegen/cli": "1.21.2",
+        "@graphql-codegen/introspection": "1.18.1",
+        "@graphql-codegen/plugin-helpers": "^1.18.3",
+        "@graphql-codegen/typescript": "1.21.1",
+        "@graphql-codegen/typescript-graphql-files-modules": "1.18.1",
+        "@graphql-codegen/typescript-operations": "1.17.15",
+        "@graphql-codegen/typescript-react-apollo": "2.2.2",
+        "@graphql-codegen/typescript-resolvers": "^1.19.0",
+        "@types/isomorphic-fetch": "0.0.35",
+        "@types/react": "^17.0.3",
+        "eslint": "^7.20.0",
+        "isomorphic-fetch": "2.2.1",
+        "nodemon": "^2.0.7",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.1.5"
+    },
+    "scripts": {
+        "dev": "tsc --build tsconfig.json --watch",
+        "eslint": "eslint .",
+        "codegen": "graphql-codegen --config codegen.yml --watch"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/client": "^3.3.11",
+        "apollo-server-micro": "^2.21.1",
+        "react": "^17.0.1"
+    }
+}

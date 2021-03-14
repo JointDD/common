@@ -1,0 +1,8 @@
+overwrite: true
+schema: './src/gql/type-defs.graphqls'
+generates:
+    ./src/gql/type-defs.ts:
+        plugins:
+            - 'typescript'
+            - 'typescript-operations'
+            - 'typescript-react-apollo'
