@@ -3,6 +3,20 @@
     "main": "lib/src/index.js",
     "types": "lib/src/index.d.ts",
     "version": "1.0.2",
+    "license": "ISC",
+    "scripts": {
+        "dev": "yarn codegen ; yarn build",
+        "build": "tsc --build tsconfig.json",
+        "eslint": "eslint .",
+        "codegen": "graphql-codegen --config codegen.yml",
+        "prepare": "yarn build"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.3.11",
+        "apollo-server-micro": "^2.21.1",
+        "graphql": "^15.5.0",
+        "react": "^17.0.1"
+    },
     "devDependencies": {
         "@graphql-codegen/cli": "1.21.2",
         "@graphql-codegen/introspection": "1.18.1",
@@ -19,19 +33,5 @@
         "nodemon": "^2.0.7",
         "ts-node": "^9.1.1",
         "typescript": "^4.1.5"
-    },
-    "scripts": {
-        "dev": "yarn codegen ; yarn build",
-        "build": "tsc --build tsconfig.json",
-        "eslint": "eslint .",
-        "codegen": "graphql-codegen --config codegen.yml",
-        "prepare": "yarn build"
-    },
-    "license": "ISC",
-    "dependencies": {
-        "@apollo/client": "^3.3.11",
-        "apollo-server-micro": "^2.21.1",
-        "graphql": "^15.5.0",
-        "react": "^17.0.1"
     }
 }
