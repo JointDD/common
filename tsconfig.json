@@ -13,13 +13,13 @@
     "moduleResolution": "node",
     "noImplicitThis": true,
     "resolveJsonModule": true,
-    "outDir": "dist",
+    "outDir": "./lib",
     "skipLibCheck": true,                     
     "strict": true,                           
     "target": "es5",
     "noEmit": false
   },
   "references": [],
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "bin", "**/__mocks__*", "**/*.spec.**", "test", "assets"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

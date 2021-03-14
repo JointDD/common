@@ -1,7 +1,7 @@
 {
     "name": "fellowship-common",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "lib/src/index.js",
+    "types": "lib/src/index.d.ts",
     "version": "1.0.1",
     "devDependencies": {
         "@graphql-codegen/cli": "1.21.2",
