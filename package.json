@@ -1,5 +1,7 @@
 {
-    "name": "@fellowship/common",
+    "name": "fellowship-common",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "version": "1.0.0",
     "devDependencies": {
         "@graphql-codegen/cli": "1.21.2",
@@ -22,7 +24,8 @@
         "dev": "yarn codegen ; yarn build",
         "build": "tsc --build tsconfig.json",
         "eslint": "eslint .",
-        "codegen": "graphql-codegen --config codegen.yml"
+        "codegen": "graphql-codegen --config codegen.yml",
+        "prepare": "yarn build"
     },
     "license": "ISC",
     "dependencies": {
