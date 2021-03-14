@@ -2,7 +2,7 @@
     "name": "fellowship-common",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "ISC",
     "scripts": {
         "dev": "yarn codegen ; yarn build",
