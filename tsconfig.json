@@ -2,6 +2,8 @@
   "compilerOptions": {
     "allowJs": true,                       
     "allowSyntheticDefaultImports": true,
+    "composite": true,                          
+    "declaration": true,
     "esModuleInterop": true, 
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -10,11 +12,14 @@
     "module": "commonjs",                     
     "moduleResolution": "node",
     "noImplicitThis": true,
-    "outDir": "./dist",
     "resolveJsonModule": true,
+    "outDir": "dist",
     "skipLibCheck": true,                     
     "strict": true,                           
     "target": "es5",
-    "declaration": true                          
-  }
+    "noEmit": false
+  },
+  "references": [],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "bin", "**/__mocks__*", "**/*.spec.**", "test", "assets"]
 }

@@ -1,5 +1,4 @@
-overwrite: true
-schema: './src/gql/type-defs.graphqls'
+schema: './src/gql/schema.graphql'
 generates:
     ./src/gql/type-defs.ts:
         plugins:

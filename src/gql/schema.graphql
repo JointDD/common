@@ -1,0 +1,110 @@
+type Daily {
+  metaData: MetaData!
+  timeSeries: [TimeSeries!]!
+}
+
+type GlobalQuote {
+  symbol: String!
+  open: String!
+  high: String!
+  low: String!
+  price: String!
+  volume: String!
+  latestTradingDay: String!
+  previousClose: String!
+  change: String!
+  changePercent: String!
+}
+
+type Intraday {
+  metaData: MetaData!
+  timeSeries: [TimeSeries!]!
+}
+
+type MetaData {
+  information: String!
+  symbol: String!
+  lastRefreshed: String!
+  interval: String!
+  outputSize: String!
+  timezone: String!
+}
+
+type Overview {
+  symbol: String!
+  assetType: String!
+  name: String!
+  description: String!
+  exchange: String!
+  currency: String!
+  country: String!
+  sector: String!
+  industry: String!
+  address: String!
+  fullTimeEmployees: String!
+  fiscalYearEnd: String!
+  latestQuarter: String!
+  marketCapitalization: String!
+  eBITDA: String!
+  pERatio: String!
+  pEGRatio: String!
+  bookValue: String!
+  dividendPerShare: String!
+  dividendYield: String!
+  ePS: String!
+  revenuePerShareTTM: String!
+  profitMargin: String!
+  operatingMarginTTM: String!
+  returnOnAssetsTTM: String!
+  returnOnEquityTTM: String!
+  revenueTTM: String!
+  grossProfitTTM: String!
+  dilutedEPSTTM: String!
+  quarterlyEarningsGrowthYOY: String!
+  quarterlyRevenueGrowthYOY: String!
+  analystTargetPrice: String!
+  trailingPE: String!
+  forwardPE: String!
+  priceToSalesRatioTTM: String!
+  priceToBookRatio: String!
+  eVToRevenue: String!
+  eVToEBITDA: String!
+  beta: String!
+  a52WeekHigh: String!
+  a52WeekLow: String!
+  a50DayMovingAverage: String!
+  a200DayMovingAverage: String!
+  sharesOutstanding: String!
+  sharesFloat: String!
+  sharesShort: String!
+  sharesShortPriorMonth: String!
+  shortRatio: String!
+  shortPercentOutstanding: String!
+  shortPercentFloat: String!
+  percentInsiders: String!
+  percentInstitutions: String!
+  forwardAnnualDividendRate: String!
+  forwardAnnualDividendYield: String!
+  payoutRatio: String!
+  dividendDate: String!
+  exDividendDate: String!
+  lastSplitFactor: String!
+  lastSplitDate: String!
+}
+
+type Query {
+  globalQuote(symbol: String!): GlobalQuote!
+  overview(symbol: String!): Overview!
+  intraday(symbol: String!, interval: Int!): Intraday!
+  daily(symbol: String!): Daily!
+}
+
+type TimeSeries {
+  time: String!
+  open: String!
+  high: String!
+  low: String!
+  close: String!
+  volume: String!
+}
+
