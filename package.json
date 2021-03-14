@@ -1,7 +1,7 @@
 {
     "name": "fellowship-common",
-    "main": "lib/src/index.js",
-    "types": "lib/src/index.d.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "version": "1.0.2",
     "license": "ISC",
     "scripts": {
